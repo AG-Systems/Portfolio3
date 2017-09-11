@@ -1,0 +1,28 @@
+ [
+            {
+              "name": "Mark Zuckerberg",
+              "picture": "./markprofilepic.jpg",
+              "active": "yes",
+              "color": "orange",
+              "chatlogs": {
+                    "othermessage": "Hey bro",
+                    "mymessage":  "Nothing Much",
+                    "mymessage_id": 1,
+                    "seen_by": true
+              },
+              "id": 1,
+              "unique_id": 3
+            },
+            {
+              "name": "Bill Gates",
+              "picture": "./billprofilepic.jpg",
+              "active": "5",
+              "color": "#4080ff",
+              "chatlogs": {
+                    "othermessage": "Made with React.js ♥",
+                    "seen_by": false
+              },
+              "id": 2,
+              "unique_id": 21
+            }
+]
