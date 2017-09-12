@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Menu from 'components/Global/Menu';
+import Footer from 'components/Global/Footer';
 
 export default class About extends Component {
   render() {
@@ -13,6 +14,7 @@ export default class About extends Component {
         <div  className='render'>
         { children }
         </div>
+        <Footer /> 
       </div>
     );
   }

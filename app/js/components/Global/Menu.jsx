@@ -10,7 +10,7 @@ export default class Menu extends Component {
             <div className='container'>
               <div className='nav-left'>
                 <a className='nav-item'>
-                  Theory and Practice
+                  Max Site
                 </a>
               </div>
           
@@ -28,7 +28,9 @@ export default class Menu extends Component {
               </div>
             </div>
           </nav>
-        <hr />
+        {/* <hr /> 
+        <br/>
+        */}
       </div>
     );
   }

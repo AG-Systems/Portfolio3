@@ -19,8 +19,9 @@ export default class Project extends Component {
           const Data = [
             {
                 name: 'Pixelml',
-                text: 'Pixelml is a site built to handle ',
-                images: ["https://farm4.staticflickr.com/3894/15008518202_c265dfa55f_h.jpg"],
+                text: 'A service for businesses to evaluate the effectiveness of online advertisements',
+                link: "/",
+                images: ["https://pixelml.com/bg6.jpg"],
                 site: "https://pixelml.com/",
                 stack: ["http://i.imgur.com/QyMnYqB.png", 
                     "https://seeklogo.com/images/S/stripe-logo-0D5E7459A5-seeklogo.com.png", 
@@ -30,14 +31,15 @@ export default class Project extends Component {
                     "https://lh3.googleusercontent.com/hIViPosdbSGUpLmPnP2WqL9EmvoVOXW7dy6nztmY5NZ9_u5lumMz4sQjjsBZ2QxjyZZCIPgucD2rhdL5uR7K0vLi09CEJYY=s688",
                     "http://scikit-learn.org/stable/_images/scikit-learn-logo-notext.png"
                 ],
-                info: false,
-                github: ""
+                github: "",
+                stacktext: "Tensorflow, TFLearn, Sklearn, Python, Ruby on Rails, Stripe api, Google Compute Engine, Amazon S3, and React.js"
             },
         
             {
                 name: 'Confident mindset',
-                text: 'something@gmail.com',
-                images: ["https://farm4.staticflickr.com/3920/15008465772_d50c8f0531_h.jpg"],
+                link: "",
+                text: 'Site for users who wanted to achieve more in life and build better self confidence with self help videos',
+                images: ["http://www.confidentmindset.com/bg1.jpg"],
                 site: "http://www.confidentmindset.com/",
                 stack: ["http://i.imgur.com/QyMnYqB.png", 
                         "https://seeklogo.com/images/S/stripe-logo-0D5E7459A5-seeklogo.com.png", 
@@ -45,18 +47,27 @@ export default class Project extends Component {
                         "https://a.slack-edge.com/bfaba/img/api/hosting_heroku.png"
                 
                 ],
-                info: true,
-                github: "https://github.com/AG-Systems/confidentmindset.git"
+                github: "https://github.com/AG-Systems/confidentmindset.git",
+                stacktext: "Ruby on Rails, Stripe api, Angularjs and Heroku"
             }
         ]
     var style = {display: "none"}
     return (
       <div className='Project columns'>
+      <br/>
                     {
                         Data.map( (element, index) => {
-                        let show_source = element.info
                         let source = null;
-                            if(!show_source)
+                        let btn = null;
+                        if(element.link == "")
+                        {
+                          btn = <a className='button is-primary' disabled >Read more</a>;
+                        }
+                        else
+                        {
+                           btn = <a href={ element.link } className='button is-primary'>Read more</a>;
+                        }
+                            if(element.github == "")
                             {
                                 source = "Source hidden";
                             }
@@ -66,10 +77,11 @@ export default class Project extends Component {
                             }
                             return (
                                     <div className='column' key = { index }>
+                                    
                                           <div className="card project-card">
                                           <div className="card-image">
                                             <figure className="image is-4by3">
-                                              <img src={ element.images[0] } alt="Placeholder image"/>
+                                              <img src={ element.images[0] } alt="Placeholder image" id={ element.name }/>
                                             </figure>
                                           </div>
                                           <div className="card-content">
@@ -80,6 +92,8 @@ export default class Project extends Component {
                                             
                                             <div className="content">
                                               <p>{ element.text }</p>
+                                              <p id="align"><b>Tech stack: </b></p>
+                                              <p>{ element.stacktext } </p>
                                               <div style={style} id={index}>
                                                   <h3 className="project-title">Tech stack: </h3>
                                                   <ul className="stack-grid">
@@ -90,7 +104,7 @@ export default class Project extends Component {
                                                   </ul>
                                               </div>
                                               <div className="content-btn">
-                                                    <a className="button is-primary">Read more</a>
+                                                    { btn }
                                                </div>
                                               {/* <br/> */}
                                             </div>
