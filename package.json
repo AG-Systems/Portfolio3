@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline --history-api-fallback --host $IP --port $PORT",
     "prod": "NODE_ENV=production node server.js",
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    "start": "NODE_ENV=production node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
   },
   "author": "auriga",
   "license": "MIT",
