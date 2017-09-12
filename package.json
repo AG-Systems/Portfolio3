@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline --history-api-fallback --host $IP --port $PORT",
     "prod": "NODE_ENV=production node server.js",
-    "start": "NODE_ENV=production node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    "start": "NODE_ENV=production node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "postinstall": "webpack -p"
   },
   "author": "auriga",
   "license": "MIT",
@@ -27,6 +28,7 @@
     "react-router": "^3.0.2",
     "style-loader": "^0.18.2",
     "webpack": "^1.14.0",
+    "express": "^4.13.3",
     "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
