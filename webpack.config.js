@@ -10,7 +10,6 @@ module.exports = {
   entry: {
     javascript: "./js/app.js",
     html: "./index.html"
-    // css: "./css/styles.css"
   },
 
   output: {
@@ -37,6 +36,10 @@ module.exports = {
       {
         test: /\.css$/,
         loader: "style-loader!css-loader",
+      },
+      {
+          test: /\.scss$/,
+          loader: 'style!css!sass'
       },
     ],
   },
