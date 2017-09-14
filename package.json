@@ -1,14 +1,14 @@
 {
-  "name": "react-tutorial",
+  "name": "react-blog",
   "version": "1.0.0",
-  "description": "",
+  "description": "My SPA personal site built with React. Webpack -p for some reason breaks it so will take a look later.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline --history-api-fallback --host $IP --port $PORT",
     "prod": "NODE_ENV=production node server.js",
     "start": "NODE_ENV=production node server.js",
-    "postinstall": "webpack -p"
+    "postinstall": "webpack "
   },
   "author": "auriga",
   "license": "MIT",

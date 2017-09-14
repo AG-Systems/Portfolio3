@@ -92,3 +92,12 @@
     text-align: left;
     margin: 0 auto;
   }
+  
+@media only screen and (max-width: 768px) {
+  .content-home
+  {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #e2e2e2;
+  }
+}
