@@ -54,6 +54,7 @@ export default class Project extends Component {
     var style = {display: "none"}
     return (
       <div className='Project columns'>
+      <title> Projects </title>
       <br/>
                     {
                         Data.map( (element, index) => {
@@ -77,7 +78,7 @@ export default class Project extends Component {
                             }
                             return (
                                     <div className='column' key = { index }>
-                                    
+                                          
                                           <div className="card project-card">
                                           <div className="card-image">
                                             <figure className="image is-4by3">

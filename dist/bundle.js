@@ -27418,7 +27418,7 @@
 
 
 	// module
-	exports.push([module.id, "@media screen and (max-width: 768px) {\n  #menu-toggle:checked + .nav-menu {\n    display: block; } }\n\n.nav {\n  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);\n  -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);\n  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75); }\n\n.about-card {\n  max-width: 350px;\n  margin: 0 auto; }\n\n.project-card {\n  width: 80%;\n  margin: 0 auto; }\n\n.project-title {\n  text-align: center; }\n\n.content-btn {\n  margin: 0 auto;\n  text-align: center;\n  font-size: 18px; }\n\n.stack-grid {\n  margin: 0 auto; }\n\n#breaker {\n  width: 100%;\n  height: 100px; }\n\n#Pixelml {\n  background-position: 30% 20%; }\n\n#align {\n  text-align: center; }\n\n/*\n            \t\t  \ta {\n            \t\t  \t\ttext-decoration : none; \n            \t\t  \t\tcolor : #636c72;\n            \t\t  \t}\n            \t\t  \ta:hover{\n            \t\t\t    text-decoration: none;\n            \t\t\t    color: #636c72;\n            \t\t\t}\n            \t\t\t*/\n.footer {\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  max-height: 20px; }\n\n.Footer {\n  max-height: 20px; }\n\n.Home {\n  text-align: center; }\n\n.Home h1 {\n  font-size: 40px; }\n\n.column {\n  margin-top: 30px; }\n\n.content-home {\n  width: 80%;\n  margin: 0 auto;\n  background-color: #e2e2e2; }\n\n.content-text {\n  width: 70%;\n  text-align: left;\n  margin: 0 auto; }\n", ""]);
+	exports.push([module.id, "@media screen and (max-width: 768px) {\n  #menu-toggle:checked + .nav-menu {\n    display: block; } }\n\n.nav {\n  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);\n  -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);\n  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75); }\n\n.about-card {\n  max-width: 350px;\n  margin: 0 auto; }\n\n.project-card {\n  width: 80%;\n  margin: 0 auto; }\n\n.project-title {\n  text-align: center; }\n\n.content-btn {\n  margin: 0 auto;\n  text-align: center;\n  font-size: 18px; }\n\n.stack-grid {\n  margin: 0 auto; }\n\n#breaker {\n  width: 100%;\n  height: 100px; }\n\n#Pixelml {\n  background-position: 30% 20%; }\n\n#align {\n  text-align: center; }\n\n/*\n            \t\t  \ta {\n            \t\t  \t\ttext-decoration : none; \n            \t\t  \t\tcolor : #636c72;\n            \t\t  \t}\n            \t\t  \ta:hover{\n            \t\t\t    text-decoration: none;\n            \t\t\t    color: #636c72;\n            \t\t\t}\n            \t\t\t*/\n.footer {\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  max-height: 20px; }\n\n.Footer {\n  max-height: 20px; }\n\n.Home {\n  text-align: center; }\n\n.Home h1 {\n  font-size: 40px; }\n\n.column {\n  margin-top: 30px; }\n\n.content-home {\n  width: 80%;\n  margin: 0 auto;\n  background-color: #e2e2e2; }\n\n.content-text {\n  width: 70%;\n  text-align: left;\n  margin: 0 auto; }\n\n@media only screen and (max-width: 768px) {\n  .content-home {\n    width: 100%;\n    margin: 0 auto;\n    background-color: #e2e2e2; } }\n", ""]);
 
 	// exports
 
@@ -28221,6 +28221,11 @@
 	        'div',
 	        { className: 'Home' },
 	        _react2.default.createElement(
+	          'title',
+	          null,
+	          'Max Chakhmatov '
+	        ),
+	        _react2.default.createElement(
 	          'section',
 	          { className: 'hero is-primary' },
 	          _react2.default.createElement(
@@ -28813,6 +28818,11 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'About render' },
+	        _react2.default.createElement(
+	          'title',
+	          null,
+	          'About '
+	        ),
 	        _react2.default.createElement('br', null),
 	        _react2.default.createElement(
 	          'div',
@@ -28986,6 +28996,11 @@
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'Project columns' },
+	                _react2.default.createElement(
+	                    'title',
+	                    null,
+	                    ' Projects '
+	                ),
 	                _react2.default.createElement('br', null),
 	                Data.map(function (element, index) {
 	                    var source = null;

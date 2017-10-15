@@ -5,6 +5,7 @@ export default class Home extends Component {
     var middle = {textAlign: "center"}
     return (
       <div className='Home'>
+      <title>Max Chakhmatov </title>
         <section className="hero is-primary">
           <div className="hero-body">
             <div className="container">

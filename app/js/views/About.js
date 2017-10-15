@@ -4,6 +4,7 @@ export default class About extends Component {
   render() {
     return (
       <div className='About render'>
+      <title>About </title>
         <br/>
           <div className="card about-card">
             <div className="card-image">
