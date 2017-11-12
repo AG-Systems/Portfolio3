@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import {observer} from 'mobx-react';
 
+//@observer
 export default class Project extends Component {
+  
   constructor(props) {
     super(props);
     this.state = {img: [0,0,0,0,0,0,0,0]};
@@ -16,6 +19,7 @@ export default class Project extends Component {
       }
   }
   render() {
+    const store = this.props.store;
           const Data = [
             {
                 name: 'Pixelml',
