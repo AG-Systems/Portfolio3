@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {observer} from 'mobx-react';
+import $ from 'jquery';
 
 //@observer
 export default class Project extends Component {
@@ -7,7 +8,6 @@ export default class Project extends Component {
   constructor(props) {
     super(props);
     this.state = {img: [0,0,0,0,0,0,0,0]};
-
   }
   stack(el)
   {
@@ -17,6 +17,10 @@ export default class Project extends Component {
       } else {
           element.style.display = ('block');
       }
+  }
+  componentDidMount() 
+  {
+     $(".project-image").fadeIn();
   }
   render() {
     const store = this.props.store;
@@ -85,8 +89,8 @@ export default class Project extends Component {
                                           
                                           <div className="card project-card">
                                           <div className="card-image">
-                                            <figure className="image is-4by3">
-                                              <img src={ element.images[0] } alt="Placeholder image" id={ element.name }/>
+                                            <figure className="image is-4by3" >
+                                              <img src={ element.images[0] } alt="image" id={ element.name }  style={{ display: "none" }} className="project-image" />
                                             </figure>
                                           </div>
                                           <div className="card-content">
